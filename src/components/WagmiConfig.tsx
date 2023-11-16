@@ -6,7 +6,7 @@ import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react'
 import { WagmiConfig as Config } from 'wagmi'
 import { mainnet } from 'wagmi/chains'
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID as string
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID as string
 
 const metadata = {
   description: 'Web3Modal Example',
@@ -21,6 +21,9 @@ const wagmiConfig = defaultWagmiConfig({ chains, metadata, projectId })
 createWeb3Modal({
   chains,
   projectId,
+  themeVariables: {
+    '--w3m-font-family': 'Inter, system-ui',
+  },
   wagmiConfig,
 })
 
