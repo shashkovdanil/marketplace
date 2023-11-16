@@ -23,10 +23,15 @@ pnpm run dev
 ## Structure
 
 `/app` - default Next.js app folder with pages, layouts, global styles, etc.
+
 `/components` - reusable components
+
 `/components/ui` - components from shadcn/ui
+
 `/hooks` - reusable hooks
+
 `/lib` - core of our project. Constants, request to API, types for entities, etc. This part of the project is virtually framework-independent and can be reused when the framework is changed. For example, from React to Vue
+
 `/stores` - global stores. We use [nanostores](https://github.com/nanostores/nanostores) for this. Because it is a lightweight user-friendly library that can work with all popular frameworks, supports computable stores, synchronizes with localStorage and is easy to test
 
 ## Features
