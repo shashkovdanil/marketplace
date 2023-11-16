@@ -22,7 +22,7 @@ createWeb3Modal({
   chains,
   projectId,
   themeVariables: {
-    '--w3m-font-family': 'Inter, system-ui',
+    '--w3m-font-family': 'Prompt, system-ui',
   },
   wagmiConfig,
 })
